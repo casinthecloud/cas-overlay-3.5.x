@@ -1,6 +1,6 @@
 h2. What is this project ?
 
-This *cas-overlay-3.5.x* project is a CAS server demo webapp in Maven overlay mode.
+This *cas-overlay-3.5.x* project is a CAS server demo webapp using Maven overlay for CAS server *version 3.5.x*.
 
 h2. Quick start & test 
 
