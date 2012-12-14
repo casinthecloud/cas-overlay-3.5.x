@@ -1,0 +1,8 @@
+h2. What is this project ?
+
+This *cas-overlay-3.5.x* project is a CAS server demo webapp in Maven overlay mode.
+
+h2. Quick start & test 
+
+To start quickly, build the project and launch the web app with jetty :<pre><code>cd cas-overlay-3.5.x
+mvn clean install jetty:run</code></pre>
