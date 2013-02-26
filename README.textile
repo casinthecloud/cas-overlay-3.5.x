@@ -6,3 +6,5 @@ h2. Quick start & test
 
 To start quickly, build the project and launch the web app with jetty :<pre><code>cd cas-overlay-3.5.x
 mvn clean install jetty:run</code></pre>
+
+Your CAS server is now started on *http://localhost:8080/cas*.
