@@ -6,13 +6,33 @@
     <packaging>war</packaging>
     <name>CAS overlay 3.5.x</name>
     <description>CAS overlay 3.5.x</description>
+
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.jasig.cas</groupId>
             <artifactId>cas-server-webapp</artifactId>
-            <version>3.5.2</version>
+            <version>${cas.version}</version>
             <type>war</type>
             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jasig.cas</groupId>
+            <artifactId>cas-server-integration-memcached</artifactId>
+            <version>${cas.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -46,4 +66,8 @@
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <cas.version>3.5.3-SNAPSHOT</cas.version>
+    </properties>
 </project>
