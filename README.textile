@@ -8,3 +8,5 @@ To start quickly, build the project and launch the web app with jetty :<pre><cod
 mvn clean install jetty:run</code></pre>
 
 Your CAS server is now started on *http://localhost:8080/cas*.
+
+The default authentication plugin accepts NetID=password as credentials (Enter an identical value for NetID and password and click LOGIN).
